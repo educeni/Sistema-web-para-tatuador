@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+:root{
+    /* cores dos elementos no site */
+
+    --fundo_site: #191919; 
+    --cards: #1e1e1e;
+    --hover: #2f2f2f;
+    --border: #3a3a3a;
+
+    /* cores dos textos no site */
+
+    --texto_principal: #e3e3e3;
+    --texto_secundario: #a8a8a8;
+
+}
+.ancora_voltar{
+    color: white;
+}
+.btn_editar{
+    padding: 10px;
+    background-color: #1C5DF2;
+    width: 100px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.conteudo_info_cliente{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1e1e1e;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 1px;
+}
+.conteudo_info_cliente > div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo_info_cliente > div > figure{
+    
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+.contato_clientes{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.conteudo_info_cliente > div > div > p{
+    font-size: 25px;
+
+}
+.img_perfil2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1c5cf257;
+    border: 1px solid #1C5DF2;
+}
+.img_perfil2 > i{
+    font-size: 25px;
+    color: #1C5DF2;
+    
+}
+.cards_felx{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.cards_felx > div{
+    padding: 10px;
+    border-radius: 20px;
+    width: 240px;
+    height: 130px;
+    background-color: #1C5DF2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     border: 1px solid var(--border);
+}
+.cards_felx_div > div{
+    display: flex;
+    flex-direction: column;
+}
+.cards_felx_div > figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4a9eff46;
+}
+.cards_felx_div > figure > i{
+    font-size: 25px;
+    
+}
+
+/* INFORMAÇÔES DO CLIENTE EDITAVEIS */
+.cards_flexs2{
+    background-color: var(--cards);
+    color: var(--texto_secundario);
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    flex-direction: column;
+}
+.cards_flexs2_d1{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.cards_flexs2_d2{
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+h2 {
+    color: white;
+    align-items: center;
+}
+
+.d2_2 > h2::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #1C5DF2;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.d2_1{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.d2_2{
+    border: 1px solid var(--border);
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--hover);
+    border-radius: 20px;
+    padding: 20px;
+}
+.d2_2 > div{
+    color: var(--texto_secundario);
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.d2_input{
+    border-radius: 5px;
+    width: 450px;
+    border: 1px solid var(--border);
+     background-color: var(--cards);
+}
+
+.cards_flexs3{
+    padding: 20px;
+     background-color: var(--cards);
+    color: var(--texto_secundario);
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.flexs3_div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexs3_div1 > button{
+    width: 300px;
+    border-radius: 5px;
+}
+.div1_1{
+    display: flex;
+    flex-direction: column;
+}
+.sep{
+    height: 1px;
+    background-color: var(--hover);
+}

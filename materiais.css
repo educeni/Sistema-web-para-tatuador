@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* cores dos elementos no site */
+    --fundo_site: #191919; 
+    --borde: #2a2a2a;
+    --cards: #1a1a1a;
+    --hover: #222222;
+
+    /* cores dos textos no site */
+    --texto_principal: #ffffff;
+    --texto_secundario: #aaaaaa;
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--fundo_site);
+    color: var(--texto_principal);
+    margin-left: 250px; /* Espaço reservado para a Navbar lateral */
+    padding: 20px; /* Espaçamento geral da página (alinha tudo por igual) */
+}
+
+.titulo{
+	margin-bottom:30px;
+    margin-right:20px;
+}
+
+/* --- CABEÇALHO --- */
+h2 { 
+    all:unset;
+    display:block;
+    font-family:'Poppins',sans-serif;
+    font-size:36px;
+    font-weight:700;
+  	margin: 0px 0 30px 0; /* Margem apenas embaixo para separar dos cards. Alinhado à esquerda! */
+    color: var(--texto_principal); 
+}
+
+.titulo-pagina {
+    margin: 30px 0 30px 0; /* Aqui está o espaçamento que alinha com a tela de Dashboard! */
+    font-size:36px;
+}
+
+h3 { 
+    color: #e0e0e0; 
+    font-size: 1.1rem; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+    font-weight: 500; 
+}
+
+/* --- ESTRUTURA PRINCIPAL --- */
+.main-layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Removido o padding daqui, agora o body controla o respiro da tela toda */
+}
+
+.col-forms {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.col-table {
+    flex: 1.5;
+    min-width: 450px;
+}
+
+.box-dark {
+    background: var(--cards);
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* --- FORMULÁRIOS --- */
+.form-group { margin-bottom: 18px; }
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-size: 0.9rem; 
+    color: var(--texto_secundario); 
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    background: #262626;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    color: var(--texto_principal);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* --- BOTÕES --- */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn-green { background: #28a745; color: #fff; }
+.btn-blue { background: #007bff; color: #fff; }
+
+/* --- TABELAS --- */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: var(--cards); 
+    border: 1px solid var(--borde); 
+    border-radius: 12px; 
+    overflow: hidden; 
+}
+
+th, td { 
+    padding: 14px 18px; 
+    text-align: left; 
+    font-size: 0.9rem; 
+    border-bottom: 1px solid var(--borde); 
+}
+
+th { 
+    background: var(--hover); 
+    color: #888888; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    font-size: 0.75rem; 
+}
+
+td { color: #dddddd; }
+
+tr:hover td { background: var(--hover); }
+
+.alert-low { background: rgba(220, 53, 69, 0.15); color: #ff6b6b; }
+.alert-low td { color: #ff8b8b; }
